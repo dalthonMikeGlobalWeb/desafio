@@ -1,0 +1,12 @@
+  --docker-composer
+  version: "3"
+  services:
+    postgres:
+      image: postgres:12.7
+      restart: always
+      environment:
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=admin
+        - POSTGRES_DB=crud
+      ports:
+        - "5432:5432"
